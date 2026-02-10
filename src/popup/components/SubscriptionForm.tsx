@@ -222,7 +222,7 @@ export default function SubscriptionForm({ mode, subscription, onClose }: Subscr
           type="date"
           value={form.startDate}
           onChange={(e) => handleChange('startDate', e.target.value)}
-          className={inputClass}
+          className={`${inputClass} cursor-pointer`}
         />
       </div>
 
@@ -273,7 +273,7 @@ export default function SubscriptionForm({ mode, subscription, onClose }: Subscr
             type="date"
             value={form.trialEndDate || ''}
             onChange={(e) => handleChange('trialEndDate', e.target.value || null)}
-            className={inputClass}
+            className={`${inputClass} cursor-pointer`}
           />
         </div>
       )}

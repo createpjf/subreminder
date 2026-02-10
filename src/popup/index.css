@@ -106,3 +106,13 @@ select {
   -moz-appearance: none;
   appearance: none;
 }
+
+/* Ensure date input pickers are clickable */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
